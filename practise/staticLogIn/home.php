@@ -19,15 +19,14 @@ else{
 
 <br><br>
 <form action="cal.php" method="get">
-    <input type="number" name="number1" placeholder="Input 1st Number">
-    <input type="number" name="number2" placeholder="Input 2nd Number"><br><br>
+    <input type="number" name="number1" placeholder="Input Number">
+    <input type="number" name="number2" placeholder="Input Number"><br><br>
     <button type="submit" name="add">+</button>
     <button type="submit" name="sub">-</button>
     <button type="submit" name="result" value="*">*</button>
     <button type="submit" name="result" value="/">/</button>
-    <button type="submit" name="result" value="C">C</button>
-    <!-- <button type="submit" name="result">*</button>
-    <button type="submit" name="result">/</button>     -->
+    <button type="submit" name="result" value="xx">X<sup>2</sup></button>
+    <button type="submit" name="result" value="out">Log out</button>
     <br><br>
 </form>
     

@@ -13,6 +13,10 @@ session_start();
     function sub($nmbr1, $nmbr2){
         return $nmbr1 - $nmbr2;
     }
+    function square($nmbr1){
+        return $nmbr1 * $nmbr1;
+    }
+
 
     if(isset($_GET['add'])){
         echo 'Sum = '.sum($nmbr1, $nmbr2);
@@ -20,14 +24,17 @@ session_start();
     elseif(isset($_GET['sub'])){
         echo 'Sub = '.sub($nmbr1, $nmbr2);
     }
+    elseif ($_GET['result'] == 'xx') {
+        echo 'Square = '.square($nmbr1);
+    }
     elseif($_GET['result'] == '*'){
         echo 'Mul = '.($nmbr1 * $nmbr2);
     }
     elseif($_GET['result'] == '/'){
         echo 'Div = '.($nmbr1/$nmbr2);
     }
-    elseif($_GET['result'] == 'C'){
-        echo '0';
+    elseif ($_GET['result'] == 'out') {
+        header('Location: index.php');
     }
 
 // }

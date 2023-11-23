@@ -10,7 +10,7 @@
 <form action="auth.php" method="post">
     <input type="text" id="uName" name="uName" placeholder="User Name" >
     <input type="text" id="password" name="password" placeholder="Password">
-    <button type="submit">Submit</button>
+    <button type="submit">Log in</button>
 </form>
 </body>
 </html>
