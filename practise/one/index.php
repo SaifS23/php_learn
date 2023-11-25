@@ -9,7 +9,7 @@
     <?php
         session_start();
         
-        $product = $_SESSION['productItem']
+        $product = $_SESSION['productItem'];
 
 
     ?>
@@ -44,6 +44,7 @@
             <td><?= ++$sl?></td>
             <td><?= $productItem['id']?></td>
             <td><?php  echo $productItem['title'] ?></td>
+            
             <td><a href="./detail.php">Show</a></td>
             <td><a href="./delet.php?index=<?= $key?>">delete</a></td>
         </tr>
