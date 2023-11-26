@@ -29,7 +29,8 @@
             <th>sl</th>
             <th>key</th>
             <th>name</th>
-            <th>Details</th>
+            <th>details</th>
+           
             <th>action</th>
         </tr>
         
@@ -43,9 +44,8 @@
         <tr>
             <td><?= ++$sl?></td>
             <td><?= $productItem['id']?></td>
-            <td><?php  echo $productItem['title'] ?></td>
-            
-            <td><a href="./detail.php">Show</a></td>
+            <td><?php  echo $productItem['title'] ?></td>        
+            <td><a href="./detail.php?index=<?= $key?>">show</a></td>          
             <td><a href="./delet.php?index=<?= $key?>">delete</a></td>
         </tr>
        

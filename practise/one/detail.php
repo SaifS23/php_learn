@@ -1,6 +1,8 @@
 <?php
 session_start();
 
-$product = $_SESSION['productItem'];
- echo $productItem['detail'] ;
- ?>
+$index = $_GET['index'];
+
+print_r($_SESSION['productItem'][$index]['detail']);
+
+?>

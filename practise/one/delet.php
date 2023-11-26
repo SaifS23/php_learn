@@ -2,7 +2,7 @@
 session_start();
 
 $index = $_GET['index'];
-// print_r($index);
+//print_r($index);
 
 unset($_SESSION['productItem'][$index]);
 
