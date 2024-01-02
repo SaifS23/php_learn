@@ -14,6 +14,7 @@
     $cntrl = new controller();
 
     $productIndex = $cntrl->index();
+    print_r($productIndex);
     
 
 

@@ -24,7 +24,14 @@ class controller
         }
     }
     public function index(){
-        $query = "SELECT * FROM `products`";
+        //echo "data take from db";
+         $query = "SELECT * FROM `products`";
+        //  $stmt = $this->conn->prepare($query);
+        //  $stmt->execute();
+        //  return $stmt->fetchAll();
+
+         $stmt = $this->conn->query($query);
+         return $stmt->fetchAll();
     }
 }
 
