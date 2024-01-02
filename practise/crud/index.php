@@ -14,6 +14,9 @@
     $cntrl = new controller();
 
     $productIndex = $cntrl->index();
+    
+
+
 
     ?>
     <table>

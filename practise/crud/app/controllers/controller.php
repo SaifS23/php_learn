@@ -24,7 +24,7 @@ class controller
         }
     }
     public function index(){
-        echo 'data from db';
+        $query = "SELECT * FROM `products`";
     }
 }
 
