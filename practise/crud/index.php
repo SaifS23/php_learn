@@ -14,24 +14,31 @@
     $cntrl = new controller();
 
     $productIndex = $cntrl->index();
-    print_r($productIndex);
+    // echo '<pre>';
+    // print_r($productIndex);
     
 
 
 
     ?>
-    <table>
+    <pre>
+    <table border="1" style="color:blue;background-color:darkkhaki;font-size:large;">
         <thead>
             <tr>
-                <th>Serial</th>
+                <th>SL_N</th>
                 <th>Title</th>
             </tr>
         </thead>
         <tbody>
+            <?php
+            $sl = 0;
+            foreach ($productIndex as $products){ 
+            ?>
             <tr>
-                <td>1</td>
-                <td>Product</td>
+                <td><?= ++$sl?></td>
+                <td><?= $products['title']?></td>
             </tr>
+            <?php }?>
         </tbody>
     </table>
     

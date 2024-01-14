@@ -12,18 +12,13 @@
         $product = $_SESSION['productItem'];
 
 
-    ?>
-    
-    <tr><a href="./add.php">add new</a></tr>
-
-    <?php
-        if(isset($_SESSION['massage'])){
+            if(isset($_SESSION['massage'])){
             echo $_SESSION['massage'];
             unset($_SESSION['massage']);
         }
     ?>
 
-<table border="1">
+<table border="1" style="background-color:aliceblue;">
     <thead>
         <tr>
             <th>sl</th>
@@ -32,6 +27,7 @@
             <th>details</th>
             <th>edit</th>
             <th>action</th>
+            <th><a href="./add.php">add new</a></th>
         </tr>
         
     </thead>

@@ -18,9 +18,9 @@ class controller
         try{
             $this->conn = new PDO("mysql:host=$this->dbhost;dbname=$this->dbname",$this->dbusername,$this->dbpassword);
             echo "Connected successfully";
-        }catch(PDOException $e)
+        }catch(PDOException $exception)
         {
-            echo $e->getLine();
+            echo $exception->getLine();
         }
     }
     public function index(){

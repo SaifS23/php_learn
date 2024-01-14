@@ -2,8 +2,9 @@
 session_start();
 
 $index = $_GET['index'];
+$products=$_SESSION['productItem'][$index];
 
-$_SESSION['productItem'][$index]['id']=$_POST['id'];
+$products=$_POST['id'];
 $_SESSION['productItem'][$index]['title']=$_POST['title'];
 $_SESSION['productItem'][$index]['detail']=$_POST['detail'];
 
