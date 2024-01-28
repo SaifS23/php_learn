@@ -6,6 +6,6 @@ use Act\controllers\controller;
 
 $datacontroller = new controller;
 $datacontroller->store($_POST);
-header('location: ./index.php');
+//header('location: ./index.php');
 
 ?>

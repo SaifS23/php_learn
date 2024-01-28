@@ -15,8 +15,8 @@
     $cntrl = new controller();
 
     $productIndex = $cntrl->index();
-    // echo '<pre>';
-    // print_r($productIndex);
+     echo '<pre>';
+     print_r($productIndex);
     ?>
 
     <pre>

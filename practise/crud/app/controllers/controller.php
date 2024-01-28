@@ -39,6 +39,10 @@ class controller
     public function store(array $data)
     {
         try{
+            echo '<pre>';
+            print_r($_FILES);
+            
+            die();
             $query = "INSERT INTO products(title) VALUES(:value1)";
 
         $stmt = $this->conn->prepare($query);
